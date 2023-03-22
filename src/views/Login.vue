@@ -1,6 +1,6 @@
 <script setup lang="ts">
+import type { UserLogin } from '@/model/user/User'
 import { useUserStore } from '@/stores/userStore'
-import type UserLogin from '../model/user/Login'
 
 const userStore = useUserStore()
 const userLogin = { email: '', password: '' } as UserLogin
